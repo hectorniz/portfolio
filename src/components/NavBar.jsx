@@ -1,31 +1,36 @@
 import { useState } from "react"
 
+const NavBar = () => {
 
-export const NavBar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const styles1 = "p-3 hover:bg-orange-500 hover:text-white rounded-md transition-all cursor-pointer" 
+  const styles2 = "list-none w-full text-center p-4 hover:bg-orange-500 hover:text-white transition-all cursor-pointer"
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  
   return (
-    <header className="flex justify-between items-center text-black py-6 px-8 md:px-32 bg-white drop-shadow-md">
-        <a href="#">
-          <img className="w-32 hover:scale-105 transition-all" src="../src/assets/PngItem_3559795.png" alt="logo" />
-        </a>
+    <nav className="flex fixed w-full justify-between items-center text-gray-200 px-8 md:px-32 mt-8">
+      <a href="#">
+            <img className="w-24 hover:scale-110 transition-all" src="../src/assets/logo.svg"/>
+      </a>
+      <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
+        <li className={styles1}><a href="#HOME">HOME</a></li>
+        <li className={styles1}><a href="#ABOUT">ABOUT ME</a></li>
+        <li className={styles1}><a href="#SKILLS">SKILLS & PROJECTS</a></li>
+        <li className={styles1}><a href="#CONTACT">CONTACT</a></li>
+      </ul>
 
-        <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
-          <li className="p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer">HOME</li>
-          <li className="p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer">PRODUCTS</li>
-          <li className="p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer">EXPLORE</li>
-          <li className="p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer">CONTACT</li>
-        </ul>
-
-        <i className="bx bx-menu xl:hidden block text-5xl cursor-pointer" onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
-        <div className={`absolute xl:hidden top-24 left-0 w-full bg-white flex flex-col items-center gap-7 
-          font-semibold text-lg transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
-          style={{transition: "transform 0.3 ease, opacity 0.3 ease"}}  
-        >
-          <li className='list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer'>HOME</li>
-          <li className='list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer'>PRODUCTS</li>
-          <li className='list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer'>EXPLORE</li>
-          <li className='list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer'>CONTACT</li>
-        </div>
-    </header>
+      <i className="bx bx-menu xl:hidden block text-5xl text-gray-200 hover:text-orange-500 cursor-pointer " onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
+      <div className={`absolute xl:hidden top-24 left-0 w-full  flex flex-col items-center gap-7 
+        font-semibold text-lg transform transition-transform ${isMenuOpen ? "block bg-slate-800 bg-opacity-60" : "hidden"}`}
+        style={{transition: "transform 0.3 ease, opacity 0.3 ease"}}  
+      >
+        <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#HOME">HOME</a></li>
+        <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#ABOUT">ABOUT ME</a></li>
+        <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#SKILLS">SKILLS & PROJECTS</a></li>
+        <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#CONTACT">CONTACT</a></li>
+      </div>
+    </nav>
   )
 }
+
+export default NavBar;
