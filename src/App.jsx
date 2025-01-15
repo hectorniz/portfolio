@@ -53,10 +53,10 @@ function App() {
             </div>
             <h2 className="text-orange-500 text-2xl lg:text-3xl xl:text-4xl font-bold self-center my-10">My Projects</h2>
             <div className="md:flex md:justify-around w-full flex-wrap">
-              <ProjectCard image="../src/assets/portfolio-image.png" url="#" urlButton="#" title="Portfolio Web">
+              <ProjectCard image="../src/assets/portfolio-image.png" url="#HOME" urlButton="https://github.com/hectorniz/portfolio" title="Portfolio Web">
                 <p>
                   This is my very first project. I developed it using React+Vite with JavaScript in JSX syntax. 
-                  I also used Tailwind CSS for styling.
+                  I also used Tailwind CSS for styling and Boxicons for icons.
                 </p>
               </ProjectCard>
             </div>
