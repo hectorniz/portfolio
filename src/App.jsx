@@ -25,7 +25,7 @@ function App() {
               Throughout my studies and personal projects, I have developed a deep interest in creating intuitive, responsive, 
               and efficient solutions. I take pride in my <strong>quick learning abilities</strong>, meticulous <strong>attention to detail</strong>, and 
               commitment to <strong>delivering high-quality results</strong>. These qualities have allowed me to excel academically, maintaining 
-              a GPA of 8.5 and completing 66% of my degree. Adittionally, my knowledge of Git and GitHub ensures effective 
+              a GPA of 8.5 and completing 66% of my degree. Adittionally, my knowledge of <strong>Git and GitHub</strong> ensures effective 
               collaboration and version control in any development environment.
             </p><br />
             <p>
