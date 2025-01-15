@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className="flex fixed w-full justify-between items-center text-gray-200 px-8 md:px-32 mt-8">
       <a href="#HOME">
-            <img className="w-24 hover:scale-110 transition-all" src=".https://raw.githubusercontent.com/hectorniz/portfolio/38cc230289b11fe4b12c5e91b5285861313da99a/src/assets/logo.svg" alt="logo"/>
+            <img className="w-24 hover:scale-110 transition-all" src="https://raw.githubusercontent.com/hectorniz/portfolio/38cc230289b11fe4b12c5e91b5285861313da99a/src/assets/logo.svg" alt="logo"/>
       </a>
       <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
         <li className={styles1}><a href="#HOME">HOME</a></li>
