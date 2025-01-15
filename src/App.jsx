@@ -33,7 +33,7 @@ function App() {
               projects while growing in a dynamic and challenging environment. My ultimate goal is to continue evolving as a 
               developer, embracing new challenges, and building innovative solutions that make a difference.
             </p><br />
-            <PillButton url="#">Download CV</PillButton>
+            <PillButton url="https://drive.google.com/file/d/1fpiXdo3bOP0EeJjHuzp7XDlaMhD38HD6/view?usp=sharing">Download CV</PillButton>
           </div>
           <img src="https://raw.githubusercontent.com/hectorniz/portfolio/refs/heads/master/src/assets/cropped_image.png" 
           className="max-w-10/12 md:w-9/12 lg:w-fit xl:w-10/12 pt-10 md:pt-0 object-scale-down overflow-hidden" style={{transition: "transform 0.6 ease"}} alt="avatar"/>
