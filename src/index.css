@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  strong {
+    @apply text-orange-500;
+  }
+}

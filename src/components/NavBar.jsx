@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className="flex fixed w-full justify-between items-center text-gray-200 px-8 md:px-32 mt-8">
       <a href="#">
-            <img className="w-24 hover:scale-110 transition-all" src="../src/assets/logo.svg"/>
+            <img className="w-24 hover:scale-110 transition-all" src="../src/assets/logo.svg" alt="logo"/>
       </a>
       <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
         <li className={styles1}><a href="#HOME">HOME</a></li>
@@ -24,10 +24,12 @@ const NavBar = () => {
         font-semibold text-lg transform transition-transform ${isMenuOpen ? "block bg-slate-800 bg-opacity-60" : "hidden"}`}
         style={{transition: "transform 0.3 ease, opacity 0.3 ease"}}  
       >
-        <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#HOME">HOME</a></li>
-        <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#ABOUT">ABOUT ME</a></li>
-        <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#SKILLS">SKILLS & PROJECTS</a></li>
-        <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#CONTACT">CONTACT</a></li>
+        <ul>
+          <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#HOME">HOME</a></li>
+          <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#ABOUT">ABOUT ME</a></li>
+          <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#SKILLS">SKILLS & PROJECTS</a></li>
+          <li className={styles2} onClick={() => setIsMenuOpen(!isMenuOpen)}><a href="#CONTACT">CONTACT</a></li>
+        </ul>
       </div>
     </nav>
   )
