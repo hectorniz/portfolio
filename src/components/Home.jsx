@@ -17,7 +17,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <img src="../src/assets/bg-image.jpg" className="w-full h-full object-cover absolute -z-10 opacity-20" alt="background"/>
+        <img src="https://raw.githubusercontent.com/hectorniz/portfolio/refs/heads/master/src/assets/bg-image.jpg" className="w-full h-full object-cover absolute -z-10 opacity-20" alt="background"/>
       </section>
     </>
   )
