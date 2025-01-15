@@ -35,7 +35,8 @@ function App() {
             </p><br />
             <PillButton url="#">Download CV</PillButton>
           </div>
-          <img src="https://raw.githubusercontent.com/hectorniz/portfolio/refs/heads/master/src/assets/cropped_image.png" className="max-w-10/12 md:w-9/12 lg:w-fit xl:w-10/12 pt-10 md:pt-0 object-scale-down overflow-hidden" style={{transition: "transform 0.6 ease"}} alt="avatar"/>
+          <img src="https://raw.githubusercontent.com/hectorniz/portfolio/refs/heads/master/src/assets/cropped_image.png" 
+          className="max-w-10/12 md:w-9/12 lg:w-fit xl:w-10/12 pt-10 md:pt-0 object-scale-down overflow-hidden" style={{transition: "transform 0.6 ease"}} alt="avatar"/>
         </WebSection>
 
         <WebSection title="Skills & Projects" id="SKILLS">

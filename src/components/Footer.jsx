@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
 
             <div className="mt-16 md:border-2 md:mx-16 md:pr-16 md:mb-16 h-fit">
-                <div className="text-2xl md:-mt-12 md:-ml-12 p-10 md:p-12 pb-16 md:mb-16 bg-orange-500 h-fit">
+                <div className="text-md sm:text-2xl md:-mt-12 md:-ml-12 p-10 md:p-12 pb-16 md:mb-16 bg-orange-500 h-fit">
                     <h2 className="text-4xl lg:text-5xl xl:text-6xl mb-3 font-bold">Doesn&apos;t like forms?</h2>
                     <p>Feel free to contact me anytime</p><br />
                     <p><i className='bx bxl-gmail' ></i>&emsp; hectorniz.developer@gmail.com</p><br />
